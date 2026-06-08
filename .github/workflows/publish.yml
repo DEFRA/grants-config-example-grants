@@ -1,5 +1,7 @@
 name: Publish
 
+run-name: ${{ github.event.inputs.run_name || github.event.head_commit.message || 'Publish' }}
+
 on:
   push:
     branches:
@@ -14,8 +16,6 @@ on:
         description: 'commit message'
         required: false
         type: string
-
-run-name: ${{ github.event.inputs.run_name || github.event.head_commit.message || 'Publish' }}
 
 permissions:
   id-token: write
