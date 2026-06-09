@@ -1,5 +1,11 @@
 # grants-config-example-grants
 
+## 0.5.0
+
+### Minor Changes
+
+- 545f531: minor version bump to help align with existing config repo
+
 ## 0.4.0
 
 ### Minor Changes
