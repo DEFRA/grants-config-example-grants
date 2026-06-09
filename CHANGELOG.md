@@ -1,5 +1,11 @@
 # grants-config-example-grants
 
+## 0.2.0
+
+### Minor Changes
+
+- 40e5857: remove temp change
+
 ## 0.1.1
 
 ### Patch Changes
