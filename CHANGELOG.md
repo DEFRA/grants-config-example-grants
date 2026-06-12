@@ -2,13 +2,13 @@
 
 ## 0.6.0
 
+## Below is copied in from the old config repo, see: https://github.com/DEFRA/grant-config-example-grants
+
+## 0.6.0
+
 ### Minor Changes
 
-- f38a3dc: minor version bump to help align with existing config repo
-
-## 0.5.0
-
-## Below is copied in from the old config repo, see: https://github.com/DEFRA/grant-config-example-grants
+- 95efabd: Add landing page example
 
 ## 0.5.0
 
