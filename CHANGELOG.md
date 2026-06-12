@@ -1,5 +1,11 @@
 # grants-config-example-grants
 
+## 0.7.0
+
+### Minor Changes
+
+- f355bf8: feat(GRAN-8): import configuration from old config repo
+
 ## 0.6.0
 
 ## Below is copied in from the old config repo, see: https://github.com/DEFRA/grant-config-example-grants
