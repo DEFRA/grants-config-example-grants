@@ -1,0 +1,4 @@
+services:
+  grants-ui-acceptance-tests:
+    volumes:
+      - ${PWD}/test/testconfig/schemas:/home/node/app/schemas:ro

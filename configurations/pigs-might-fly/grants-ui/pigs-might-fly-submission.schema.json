@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Pigs Might Fly Application Payload (manually generated)",
+  "type": "object",
+  "properties": {
+    "isPigFarmer": {
+      "type": "boolean"
+    }
+  },
+  "required": ["isPigFarmer"],
+  "if": {
+    "properties": {
+      "isPigFarmer": {
+        "type": "boolean",
+        "const": true
+      }
+    }
+  },
+  "then": {
+    "properties": {
+      "totalPigs": {
+        "type": "integer",
+        "minimum": 1,
+        "maximum": 1000
+      },
+      "whitePigsCount": {
+        "type": "integer",
+        "minimum": 1
+      },
+      "britishLandracePigsCount": {
+        "type": "integer",
+        "minimum": 1
+      },
+      "berkshirePigsCount": {
+        "type": "integer",
+        "minimum": 1
+      },
+      "otherPigsCount": {
+        "type": "integer",
+        "minimum": 1
+      }
+    },
+    "required": ["totalPigs"],
+    "fgSumEquals": {
+      "fields": [
+        "whitePigsCount",
+        "berkshirePigsCount",
+        "britishLandracePigsCount",
+        "otherPigsCount"
+      ],
+      "targetField": "totalPigs"
+    }
+  }
+}
