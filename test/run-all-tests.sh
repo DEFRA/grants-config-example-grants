@@ -21,10 +21,10 @@ if [ "${CI}" = "true" ]; then
 fi
 
 mkdir -p test/testconfig
-cp -r example-grant-with-auth/ test/testconfig/example-grant-with-auth@0.0.0
+cp -r configurations/example-grant-with-auth/ test/testconfig/example-grant-with-auth@0.0.0
 cp $(dirname "$0")/release.yml test/testconfig/
 
 mkdir -p test/testconfig/schemas
-cp example-grant-with-auth/grants-ui/example-grant-with-auth-submission.schema.json test/testconfig/schemas/
+cp configurations/example-grant-with-auth/grants-ui/example-grant-with-auth-submission.schema.json test/testconfig/schemas/
 
 "$(dirname "$0")/docker-compose-smoke-test.sh"
