@@ -200,7 +200,8 @@ pages:
       - name: startInfoOne
         title: Html
         type: Html
-        content: <p class="govuk-body">This service uses DefraID and the Save and Return
+        content:
+          <p class="govuk-body">This service uses DefraID and the Save and Return
           feature, and demonstrates the use of the following components and page
           types:</p>
         id: 434ab3dc-fad9-44c5-8601-b19477a1d77e
@@ -281,7 +282,8 @@ pages:
     components:
       - name: yesNoField
         title: Yes or No
-        hint: Selecting 'No' will demonstrate navigating to a Terminal page to end the
+        hint:
+          Selecting 'No' will demonstrate navigating to a Terminal page to end the
           application
         type: YesNoField
         options:
@@ -298,7 +300,8 @@ pages:
       - name: cannotApplyInfo
         title: Html
         type: Html
-        content: <p class="govuk-body">This is an example of a Terminal page to give
+        content:
+          <p class="govuk-body">This is an example of a Terminal page to give
           details on what conditions have not been met to continue applying for
           the grant.</p>
         id: 19aa43e5-3d6c-45fc-a7f8-8c7d0b43ea0e
@@ -312,7 +315,8 @@ pages:
       - name: listComponentInfo
         title: Html
         type: Html
-        content: <p class="govuk-body">This is an example of a List guidance component
+        content:
+          <p class="govuk-body">This is an example of a List guidance component
           and an AutocompleteField.</p>
         id: b0e40157-875a-4fda-97b4-9809cd4f2f28
         options: {}
@@ -342,7 +346,8 @@ pages:
       - name: radiosInfo
         title: Html
         type: Html
-        content: <p class="govuk-body">This is an example of a RadiosField component.
+        content:
+          <p class="govuk-body">This is an example of a RadiosField component.
           Options can be configured to go to Terminal pages or Conditional
           pages.</p>
         id: 545895da-dc16-4bd6-8d6a-4308277982df
@@ -352,7 +357,8 @@ pages:
         title: Radio option
         type: RadiosField
         list: 57f1e7a6-d27a-4144-ace6-6ddacad103df
-        hint: Selecting the first option demonstrates navigating to an optional page
+        hint:
+          Selecting the first option demonstrates navigating to an optional page
           before continuing
         options:
           customValidationMessages:
@@ -367,7 +373,8 @@ pages:
       - name: conditionalPageInfo
         title: Html
         type: Html
-        content: '<p class="govuk-body">This is an example of a Conditional Page. You
+        content:
+          '<p class="govuk-body">This is an example of a Conditional Page. You
           must meet certain conditions before you submit a full application.</p>
           '
         id: c62adf1e-8175-4226-a614-2f889a254036
@@ -895,6 +902,10 @@ pages:
     controller: DeclarationPageController
     view: declaration-page.html
     id: 8ee401e7-76c5-456b-a1f4-d84fca115e01
+  - title: Confirmation
+    path: /confirmation
+    controller: ConfirmationPageController
+    id: 9817cd3a-c9ae-49f1-8a95-076a82504d30
 
   # Off-journey page: never reached by the default V2 page walk because it is
   # positioned after the final journey page. It is only entered via a direct
