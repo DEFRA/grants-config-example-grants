@@ -1,5 +1,11 @@
 # grants-config-example-grants
 
+## 0.8.0
+
+### Minor Changes
+
+- c9d6ee4: Add confirmation page
+
 ## 0.7.0
 
 ### Minor Changes
