@@ -1,5 +1,11 @@
 # grants-config-example-grants
 
+## 1.1.0
+
+### Minor Changes
+
+- 521f06c: Add confirmation page
+
 ## 1.0.0
 
 ### Major Changes
