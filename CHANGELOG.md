@@ -1,5 +1,11 @@
 # grants-config-example-grants
 
+## 1.0.0
+
+### Major Changes
+
+- 7d2f9d7: Migrate example grants to config broker
+
 ## 0.8.0
 
 ### Minor Changes
