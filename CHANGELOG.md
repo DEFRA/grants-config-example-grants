@@ -1,5 +1,11 @@
 # grants-config-example-grants
 
+## 1.2.0
+
+### Minor Changes
+
+- 45b7089: Add notification banner to example-grant-with-auth
+
 ## 1.1.0
 
 ### Minor Changes
