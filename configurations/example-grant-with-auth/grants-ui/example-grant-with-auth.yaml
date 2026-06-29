@@ -59,6 +59,7 @@ metadata:
         gasStatus: default
         toGrantsStatus: SUBMITTED
         toPath: /confirmation
+    excludedPaths: ['print-submitted-application']
   permissions:
     enforce: true
     resource: csApplications

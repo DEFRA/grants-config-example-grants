@@ -2,7 +2,8 @@ name: Grants
 metadata:
   id: 95e92559-968d-44ae-8666-2b1ad3dffd33
   enabledInProd: false
-  grantRedirectRules: null
+  grantRedirectRules:
+    excludedPaths: ['print-submitted-application']
   confirmationContent:
     html: >
       <h2 class="govuk-heading-m">What happens next</h2>
