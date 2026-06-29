@@ -1,5 +1,11 @@
 # grants-config-example-grants
 
+## 1.3.0
+
+### Minor Changes
+
+- 7c27901: Add print submitted application page
+
 ## 1.2.0
 
 ### Minor Changes
