@@ -1,5 +1,11 @@
 # grants-config-example-grants
 
+## 1.3.1
+
+### Patch Changes
+
+- f329793: Add exclusion path for print submitted application page
+
 ## 1.3.0
 
 ### Minor Changes
