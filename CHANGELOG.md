@@ -1,5 +1,11 @@
 # grants-config-example-grants
 
+## 1.3.2
+
+### Patch Changes
+
+- bf08274: Add allowlist for example-whitelist
+
 ## 1.3.1
 
 ### Patch Changes
