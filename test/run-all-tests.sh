@@ -24,7 +24,7 @@ mkdir -p test/testconfig
 cp -r configurations/example-grant-with-auth/ test/testconfig/example-grant-with-auth@0.0.0
 cp -r configurations/example-grant-with-map/ test/testconfig/example-grant-with-map@0.0.0
 cp -r configurations/example-grant-with-task-list/ test/testconfig/example-grant-with-task-list@0.0.0
-cp -r configurations/example-grant-with-task-hide-questions/ test/testconfig/example-grant-with-task-hide-questions@0.0.0
+cp -r configurations/example-grant-with-task-list-hide-questions/ test/testconfig/example-grant-with-task-list-hide-questions@0.0.0
 cp -r configurations/example-whitelist/ test/testconfig/example-whitelist@0.0.0
 cp $(dirname "$0")/release.yml test/testconfig/
 curl -fsSL \
