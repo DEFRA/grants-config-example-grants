@@ -22,7 +22,11 @@ fi
 
 mkdir -p test/testconfig
 cp -r configurations/example-grant-with-auth/ test/testconfig/example-grant-with-auth@0.0.0
+cp -r configurations/example-whitelist/ test/testconfig/example-whitelist@0.0.0
 cp $(dirname "$0")/release.yml test/testconfig/
+curl -fsSL \
+  https://raw.githubusercontent.com/DEFRA/grants-ui/main/localstack/config-broker/local-allowlists/example-whitelist.yaml \
+  -o test/testconfig/example-whitelist@0.0.0/grants-ui/allowlist.yaml
 
 mkdir -p test/testconfig/schemas
 cp configurations/example-grant-with-auth/grants-ui/example-grant-with-auth-submission.schema.json test/testconfig/schemas/
