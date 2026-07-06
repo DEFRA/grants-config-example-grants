@@ -4,6 +4,8 @@ metadata:
   enabledInProd: false
   grantRedirectRules:
     excludedPaths: ['print-submitted-application']
+  permissions:
+    enforce: false
   confirmationContent:
     html: >
       <h2 class="govuk-heading-m">What happens next</h2>
