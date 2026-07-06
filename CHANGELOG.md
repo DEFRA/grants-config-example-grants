@@ -1,5 +1,11 @@
 # grants-config-example-grants
 
+## 1.3.3
+
+### Patch Changes
+
+- c3a4f75: Add missing pigs-might-fly permissions config section
+
 ## 1.3.2
 
 ### Patch Changes
