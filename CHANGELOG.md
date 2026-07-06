@@ -1,5 +1,11 @@
 # grants-config-example-grants
 
+## 1.3.5
+
+### Patch Changes
+
+- 3f5f941: Update pigs-might-fly CW test label.
+
 ## 1.3.4
 
 ### Patch Changes
