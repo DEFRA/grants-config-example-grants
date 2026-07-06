@@ -1,5 +1,11 @@
 # grants-config-example-grants
 
+## 1.3.4
+
+### Patch Changes
+
+- 86520ee: Update pigs-might-fly configuration for Config Broker testing
+
 ## 1.3.3
 
 ### Patch Changes
