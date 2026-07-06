@@ -68,7 +68,7 @@
                 "component": "summary-list",
                 "rows": [
                   {
-                    "label": "Are you a pig farmer?",
+                    "label": "Are you a pug farmer?",
                     "text": "$.payload.answers.isPigFarmer",
                     "format": "yesNo"
                   },
