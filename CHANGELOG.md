@@ -1,5 +1,11 @@
 # grants-config-example-grants
 
+## 2.0.0
+
+### Major Changes
+
+- 10dfbf5: testing 2.0.0
+
 ## 1.3.5
 
 ### Patch Changes
