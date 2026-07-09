@@ -1,5 +1,11 @@
 # grants-config-example-grants
 
+## 2.0.1
+
+### Patch Changes
+
+- 59e964a: changed to 2.0.1
+
 ## 2.0.0
 
 ### Major Changes
