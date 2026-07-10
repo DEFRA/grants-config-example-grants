@@ -1,5 +1,11 @@
 # grants-config-example-grants
 
+## 2.0.2
+
+### Patch Changes
+
+- 0e512de: update check-answers controller
+
 ## 2.0.1
 
 ### Patch Changes
