@@ -1,6 +1,6 @@
 {
   "name": "grants-config-example-grants",
-  "version": "2.0.2",
+  "version": "2.1.0",
   "description": "grants-config-example-grants",
   "main": "src/index.js",
   "type": "module",

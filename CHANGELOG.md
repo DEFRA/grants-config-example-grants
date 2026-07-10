@@ -1,5 +1,11 @@
 # grants-config-example-grants
 
+## 2.1.0
+
+### Minor Changes
+
+- 3ec32b5: Added devMode to example grants with map
+
 ## 2.0.2
 
 ### Patch Changes
