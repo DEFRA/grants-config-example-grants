@@ -1,5 +1,11 @@
 # grants-config-example-grants
 
+## 2.2.0
+
+### Minor Changes
+
+- 062e714: adding version
+
 ## 2.1.0
 
 ### Minor Changes
