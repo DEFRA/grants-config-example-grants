@@ -1,5 +1,11 @@
 # grants-config-example-grants
 
+## 2.3.0
+
+### Minor Changes
+
+- 3486028: Minor wording change for testing
+
 ## 2.2.0
 
 ### Minor Changes
