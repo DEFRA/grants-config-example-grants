@@ -1,5 +1,11 @@
 # grants-config-example-grants
 
+## 2.3.1
+
+### Patch Changes
+
+- a7e0b13: updating spelling error
+
 ## 2.3.0
 
 ### Minor Changes
