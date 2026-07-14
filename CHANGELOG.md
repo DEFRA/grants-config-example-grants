@@ -1,5 +1,11 @@
 # grants-config-example-grants
 
+## 2.3.2
+
+### Patch Changes
+
+- 9409f2c: Extend example-whitelist allow list in Dev
+
 ## 2.3.1
 
 ### Patch Changes
