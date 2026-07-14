@@ -416,7 +416,7 @@ pages:
         title: Html
         type: Html
         content: |
-          <p class="govuk-body">You selected option three. This page demonstrates routing when a CheckboxesField <em>contains</em> a specific list item (the operator : contains condition on a ListItemRef). The journey runner ticks only the first option, so this page is only reached when you select option three manually.</p>
+          <p class="govuk-body">You selected option three. This page demonstrates the routing when a CheckboxesField <em>contains</em> a specific list item (the operator : contains condition on a ListItemRef). The journey runner ticks only the first option, so this page is only reached when you select option three manually.</p>
         id: e6d9fda0-1b2c-3d4e-5f6a-7b8c9daebfc0
         options: {}
         schema: {}
