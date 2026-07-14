@@ -78,7 +78,7 @@
         {
           "code": "REVIEW_APPLICATION",
           "name": "Review Application",
-          "description": "Review the application for eligibility",
+          "description": "Review the application for eligibility CB",
           "statuses": [
             {
               "code": "APPLICATION_RECEIVED",
