@@ -1,5 +1,11 @@
 # grants-config-example-grants
 
+## 2.3.3
+
+### Patch Changes
+
+- 00b9c26: Add some new copy for demo run through
+
 ## 2.3.2
 
 ### Patch Changes
