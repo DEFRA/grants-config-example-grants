@@ -1,5 +1,11 @@
 # grants-config-example-grants
 
+## 2.3.4
+
+### Patch Changes
+
+- 0738e54: Undo the demo text
+
 ## 2.3.3
 
 ### Patch Changes
