@@ -1,5 +1,11 @@
 # grants-config-example-grants
 
+## 2.3.6
+
+### Patch Changes
+
+- b8d2a56: Undo demo content update
+
 ## 2.3.5
 
 ### Patch Changes
