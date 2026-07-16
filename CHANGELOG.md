@@ -1,5 +1,11 @@
 # grants-config-example-grants
 
+## 2.3.5
+
+### Patch Changes
+
+- 784b419: Added some new content for the grants showcase
+
 ## 2.3.4
 
 ### Patch Changes
