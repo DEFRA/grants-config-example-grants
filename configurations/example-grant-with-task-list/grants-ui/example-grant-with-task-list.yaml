@@ -124,6 +124,7 @@ pages:
         content: |
           <p class="govuk-body">This is an example of a grant application that uses a task list.</p>
           <p class="govuk-body">There are optional settings within the YAML file under <code>metadata.tasklist</code> that change how the task list behaves.</p>
+          <p class="govuk-body">This is some temporary text to show an update for demo</p>
 
   # Pre task pages - no section, e.g. eligibility check or confirmation of farm details
   - title: Example Eligibility Check
