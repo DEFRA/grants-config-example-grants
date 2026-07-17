@@ -1,5 +1,11 @@
 # grants-config-example-grants
 
+## 2.3.8
+
+### Patch Changes
+
+- 9f1ebe0: Remove whitelist env var references
+
 ## 2.3.7
 
 ### Patch Changes
