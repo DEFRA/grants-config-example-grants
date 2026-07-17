@@ -176,7 +176,7 @@ metadata:
     panelText: 'Your reference number'
     html: |
       <h2 class="govuk-heading-m">What happens next</h2>
-      <p class="govuk-body">Defra will email you when your funding offer is available to review. This will be within 5 working days.</p>
+      <p class="govuk-body">Defra will email you when your funding offer is available to review. This will be within 3 working days.</p>
       <p class="govuk-body">You will need to sign in to the service to accept your funding offer.</p>
       <p class="govuk-body">You should not start work on the actions you have applied for until:</p>
       <ul class="govuk-list govuk-list--bullet govuk-!-margin-bottom-6">
