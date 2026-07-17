@@ -1,5 +1,11 @@
 # grants-config-example-grants
 
+## 2.3.7
+
+### Patch Changes
+
+- 040f9ce: Patch update for testing
+
 ## 2.3.6
 
 ### Patch Changes
