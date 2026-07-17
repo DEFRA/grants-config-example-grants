@@ -1,5 +1,11 @@
 # grants-config-example-grants
 
+## 2.4.0
+
+### Minor Changes
+
+- e070ea2: Add allowlist.yaml for all grants - default to allowAll, no prod
+
 ## 2.3.8
 
 ### Patch Changes
