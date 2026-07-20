@@ -429,7 +429,7 @@ pages:
         type: Html
         title: Html
         content: |
-          <p class="govuk-body">This page demonstrates a NumberField with schema-level validation. The engine will reject values outside £10,000 to £999,999 and re-renders the page with a custom error message. You cannot move on until the value is in range.</p>
+          <p class="govuk-body">This page demonstrates a NumberField with schema-level validation. The engine rejects values outside £10,000 to £999,999 and re-renders the page with a custom error message. You cannot move on until the value is in range.</p>
         id: dc6894f1-b7b1-4873-8adb-7ac869da21f7
         options: {}
         schema: {}
