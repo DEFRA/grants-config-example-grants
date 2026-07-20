@@ -20,16 +20,32 @@ if [ "${CI}" = "true" ]; then
   export ACCEPTANCE_TESTS_HOOK="yes | ${ACCEPTANCE_TESTS_HOOK}"
 fi
 
+# Grants set up for acceptance tests (keep in sync with release.yml).
+GRANTS=(
+  example-grant-with-auth
+  example-grant-with-map
+  example-grant-with-task-list
+  example-grant-with-task-list-hide-questions
+  example-whitelist
+  pigs-might-fly
+)
+
+ALLOWLIST_BASE_URL='https://raw.githubusercontent.com/DEFRA/grants-ui/main/localstack/config-broker/local-allowlists'
+
 mkdir -p test/testconfig
-cp -r configurations/example-grant-with-auth/ test/testconfig/example-grant-with-auth@0.0.0
-cp -r configurations/example-grant-with-map/ test/testconfig/example-grant-with-map@0.0.0
-cp -r configurations/example-grant-with-task-list/ test/testconfig/example-grant-with-task-list@0.0.0
-cp -r configurations/example-grant-with-task-list-hide-questions/ test/testconfig/example-grant-with-task-list-hide-questions@0.0.0
-cp -r configurations/example-whitelist/ test/testconfig/example-whitelist@0.0.0
+for grant in "${GRANTS[@]}"; do
+  cp -r "configurations/${grant}/" "test/testconfig/${grant}@0.0.0"
+done
 cp $(dirname "$0")/release.yml test/testconfig/
-curl -fsSL \
-  https://raw.githubusercontent.com/DEFRA/grants-ui/main/localstack/config-broker/local-allowlists/example-whitelist.yaml \
-  -o test/testconfig/example-whitelist@0.0.0/grants-ui/allowlist.yaml
+
+# Fetch the canonical allowlist for every grant. Passing all URL/output pairs to
+# a single curl invocation reuses the connection (HTTP/2 multiplexing), which is
+# faster than spawning one curl per file.
+CURL_ARGS=()
+for grant in "${GRANTS[@]}"; do
+  CURL_ARGS+=(-o "test/testconfig/${grant}@0.0.0/grants-ui/allowlist.yaml" "${ALLOWLIST_BASE_URL}/${grant}.yaml")
+done
+curl -fsSL "${CURL_ARGS[@]}"
 
 mkdir -p test/testconfig/schemas
 cp configurations/example-grant-with-auth/grants-ui/example-grant-with-auth-submission.schema.json test/testconfig/schemas/
