@@ -1,5 +1,11 @@
 # grants-config-example-grants
 
+## 3.0.0
+
+### Major Changes
+
+- 915f31b: Test major version increment
+
 ## 2.5.0
 
 ### Minor Changes
