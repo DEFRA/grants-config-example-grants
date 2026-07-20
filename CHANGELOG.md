@@ -1,5 +1,11 @@
 # grants-config-example-grants
 
+## 2.5.0
+
+### Minor Changes
+
+- 189b651: Minor version increment test
+
 ## 2.4.1
 
 ### Patch Changes
