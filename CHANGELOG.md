@@ -1,5 +1,11 @@
 # grants-config-example-grants
 
+## 2.4.1
+
+### Patch Changes
+
+- 0c36f00: Patch test
+
 ## 2.4.0
 
 ### Minor Changes
