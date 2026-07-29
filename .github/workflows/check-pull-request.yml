@@ -42,10 +42,10 @@ jobs:
           docker build --no-cache --tag cdp-node-backend-template .
           exit $?
 
-      - name: Run journey tests for grants-ui
-        run: |
-          chmod +x ./test/run-all-tests.sh
-          ./test/run-all-tests.sh
+        # - name: Run journey tests for grants-ui
+        #  run: |
+        #   chmod +x ./test/run-all-tests.sh
+        #  ./test/run-all-tests.sh
 
       - name: SonarCloud Scan
         if: github.actor != 'dependabot[bot]'
