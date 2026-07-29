@@ -40,7 +40,7 @@
     "@defra/hapi-tracing": "1.30.0",
     "@elastic/ecs-pino-format": "1.5.0",
     "@hapi/boom": "10.0.1",
-    "@hapi/hapi": "21.4.9",
+    "@hapi/hapi": "21.4.10",
     "aws4": "1.13.2",
     "brace-expansion": "5.0.8",
     "convict": "6.2.5",
@@ -58,7 +58,7 @@
     "eslint": "10.7.0",
     "husky": "9.1.7",
     "neostandard": "0.13.0",
-    "prettier": "3.9.5",
+    "prettier": "3.9.6",
     "vitest": "4.1.10",
     "vitest-fetch-mock": "0.4.5"
   },
