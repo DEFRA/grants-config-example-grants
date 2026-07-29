@@ -1,5 +1,11 @@
 # grants-config-example-grants
 
+## 3.1.1
+
+### Patch Changes
+
+- 56a273e: sync pmf to show config version infor on application tab
+
 ## 3.1.0
 
 ### Minor Changes
