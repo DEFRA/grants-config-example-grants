@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "696e61bae2e1b35484db20d7"
-  },
   "code": "pigs-might-fly",
   "metadata": {
     "description": "Pigs Might Fly",
@@ -78,7 +75,7 @@
         {
           "code": "REVIEW_APPLICATION",
           "name": "Review Application",
-          "description": "Review the application for eligibility CB",
+          "description": "Review the application for eligibility",
           "statuses": [
             {
               "code": "APPLICATION_RECEIVED",
@@ -98,6 +95,15 @@
                 {
                   "code": "ON_HOLD",
                   "processes": []
+                }
+              ]
+            },
+            {
+              "code": "AGREEMENT_GENERATING",
+              "validFrom": [
+                {
+                  "code": "IN_REVIEW",
+                  "processes": ["GENERATE_OFFER"]
                 }
               ]
             },
@@ -124,7 +130,62 @@
               "validFrom": [
                 {
                   "code": "IN_REVIEW",
+                  "processes": ["GENERATE_OFFER"]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "REVIEW_OFFER",
+          "name": "Preparing Agreement",
+          "description": "Agreement document being drafted and made ready for the applicant",
+          "statuses": [
+            {
+              "code": "AGREEMENT_DRAFTED",
+              "validFrom": [
+                {
+                  "code": "PRE_AWARD:REVIEW_APPLICATION:AGREEMENT_GENERATING",
+                  "processes": ["STORE_AGREEMENT_CASE"]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CUSTOMER_AGREEMENT_REVIEW",
+          "name": "Agreement with Applicant",
+          "description": "Agreement is with the applicant, awaiting their response",
+          "statuses": [
+            {
+              "code": "AGREEMENT_OFFERED",
+              "validFrom": [
+                {
+                  "code": "PRE_AWARD:REVIEW_OFFER:AGREEMENT_DRAFTED",
                   "processes": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "POST_AGREEMENT_MONITORING",
+      "name": "Post Agreement Monitoring",
+      "description": "Agreement has been accepted and is monitored",
+      "stages": [
+        {
+          "code": "MONITORING",
+          "name": "Monitoring",
+          "description": "Monitor accepted agreement",
+          "statuses": [
+            {
+              "code": "AGREEMENT_ACCEPTED",
+              "validFrom": [
+                {
+                  "code": "PRE_AWARD:CUSTOMER_AGREEMENT_REVIEW:AGREEMENT_OFFERED",
+                  "processes": ["ACCEPT_AGREEMENT"]
                 }
               ]
             }
@@ -160,6 +221,66 @@
                 "code": "PRE_AWARD:FINAL_REVIEW:APPLICATION_APPROVED",
                 "source": "CW",
                 "mappedTo": "PRE_AWARD:REVIEW_APPLICATION:APPLICATION_APPROVED"
+              },
+              {
+                "code": "PRE_AWARD:FINAL_APPROVAL:APPLICATION_APPROVED",
+                "source": "CW",
+                "mappedTo": "PRE_AWARD:REVIEW_APPLICATION:APPLICATION_APPROVED"
+              },
+              {
+                "code": "PRE_AWARD:FINAL_APPROVAL:APPLICATION_APPROVED",
+                "source": "CW",
+                "mappedTo": "PRE_AWARD:REVIEW_APPLICATION:APPLICATION_APPROVED"
+              },
+              {
+                "code": "PRE_AWARD:REVIEW_APPLICATION:AGREEMENT_GENERATING",
+                "source": "CW",
+                "mappedTo": "PRE_AWARD:REVIEW_APPLICATION:AGREEMENT_GENERATING"
+              },
+              {
+                "code": "offered",
+                "source": "AS",
+                "mappedTo": "PRE_AWARD:REVIEW_OFFER:AGREEMENT_DRAFTED"
+              }
+            ]
+          },
+          {
+            "code": "REVIEW_OFFER",
+            "statuses": [
+              {
+                "code": "PRE_AWARD:REVIEW_OFFER:AGREEMENT_DRAFTED",
+                "source": "CW",
+                "mappedTo": "PRE_AWARD:REVIEW_OFFER:AGREEMENT_DRAFTED"
+              },
+              {
+                "code": "PRE_AWARD:CUSTOMER_AGREEMENT_REVIEW:AGREEMENT_OFFERED",
+                "source": "CW",
+                "mappedTo": "PRE_AWARD:CUSTOMER_AGREEMENT_REVIEW:AGREEMENT_OFFERED"
+              }
+            ]
+          },
+          {
+            "code": "CUSTOMER_AGREEMENT_REVIEW",
+            "statuses": [
+              {
+                "code": "accepted",
+                "source": "AS",
+                "mappedTo": "POST_AGREEMENT_MONITORING:MONITORING:AGREEMENT_ACCEPTED"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "code": "POST_AGREEMENT_MONITORING",
+        "stages": [
+          {
+            "code": "MONITORING",
+            "statuses": [
+              {
+                "code": "POST_AGREEMENT_MONITORING:MONITORING:AGREEMENT_ACCEPTED",
+                "source": "CW",
+                "mappedTo": "POST_AGREEMENT_MONITORING:MONITORING:AGREEMENT_ACCEPTED"
               }
             ]
           }
@@ -171,5 +292,6 @@
     "PRE_AWARD:REVIEW_APPLICATION:APPLICATION_AMEND",
     "PRE_AWARD:REVIEW_OFFER:APPLICATION_AMEND",
     "PRE_AWARD:CUSTOMER_AGREEMENT_REVIEW:APPLICATION_AMEND"
-  ]
+  ],
+  "version": "0.0.0"
 }
