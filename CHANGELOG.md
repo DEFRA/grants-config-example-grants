@@ -1,5 +1,11 @@
 # grants-config-example-grants
 
+## 3.1.0
+
+### Minor Changes
+
+- de262f1: pmf latest
+
 ## 3.0.0
 
 ### Major Changes
