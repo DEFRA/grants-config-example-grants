@@ -1,5 +1,11 @@
 # grants-config-example-grants
 
+## 3.2.0
+
+### Minor Changes
+
+- 97ce20b: Add phase to grants-ui example-grant-with-auth
+
 ## 3.1.1
 
 ### Patch Changes
