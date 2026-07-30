@@ -1,5 +1,11 @@
 # grants-config-example-grants
 
+## 3.3.0
+
+### Minor Changes
+
+- 309785f: Add enabledLandActions and preSubmission rules to example-grant-with-map
+
 ## 3.2.0
 
 ### Minor Changes
