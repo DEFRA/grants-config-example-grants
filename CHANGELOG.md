@@ -1,5 +1,11 @@
 # grants-config-example-grants
 
+## 3.4.0
+
+### Minor Changes
+
+- 17d2aaf: rename status to value for grant tasks
+
 ## 3.3.0
 
 ### Minor Changes
