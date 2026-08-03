@@ -1,5 +1,11 @@
 # grants-config-example-grants
 
+## 3.5.0
+
+### Minor Changes
+
+- bd9547b: Switch to new select actions controller
+
 ## 3.4.0
 
 ### Minor Changes
