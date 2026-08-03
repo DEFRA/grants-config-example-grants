@@ -4,11 +4,8 @@ metadata:
   id: 3a7f1c2e-8b4d-4e9a-b5f6-c2d3e4f5a6b7
   enabledInProd: false
   enabledLandActions:
-    - 'CMOR1'
-    - 'UPL1'
-    - 'UPL2'
-    - 'UPL3'
     - 'CLIG3'
+    - 'SCR2'
     - 'CSAM3'
   grantRedirectRules:
     preSubmission:
@@ -70,7 +67,7 @@ pages:
   - title: Select actions for land parcel
     id: a1b2c3d4-0001-0001-0001-000000000004
     path: /select-actions-for-land-parcel
-    controller: SelectLandActionsPageController
+    controller: SelectActionsPageController
 
   - title: Check your answers
     id: a1b2c3d4-0001-0001-0001-000000000011
