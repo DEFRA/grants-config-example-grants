@@ -21,7 +21,7 @@
             },
             "dateReceived": {
               "label": "Date Received",
-              "text": "$.dateReceived",
+              "text": "$.createdAt",
               "type": "date",
               "format": "formatDate"
             }
