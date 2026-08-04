@@ -455,7 +455,7 @@
                       "classes": "govuk-body"
                     }
                   ],
-                  "valueOptions": [
+                  "statusOptions": [
                     {
                       "code": "ACCEPTED",
                       "name": "Accepted",
@@ -519,7 +519,7 @@
                       ]
                     }
                   ],
-                  "valueOptions": [
+                  "statusOptions": [
                     {
                       "code": "ACCEPTED",
                       "name": "Accepted",
@@ -565,7 +565,7 @@
                       "classes": "govuk-body"
                     }
                   ],
-                  "valueOptions": [
+                  "statusOptions": [
                     {
                       "code": "ACCEPTED",
                       "name": "Accepted",
