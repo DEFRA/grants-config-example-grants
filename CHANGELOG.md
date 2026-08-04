@@ -1,5 +1,11 @@
 # grants-config-example-grants
 
+## 3.5.2
+
+### Patch Changes
+
+- bf9d598: Align the Pigs Might Fly caseworking and GAS configuration with the agreement flow.
+
 ## 3.5.1
 
 ### Patch Changes
