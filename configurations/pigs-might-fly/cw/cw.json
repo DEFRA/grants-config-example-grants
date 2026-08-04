@@ -207,6 +207,7 @@
                         "href": {
                           "urlTemplate": "$.definitions.agreementsService.internalUrl",
                           "params": {
+                            "caseId": "$._id",
                             "agreementRef": "jsonata:$sort($.supplementaryData.agreements, function($l, $r) { $l.createdAt < $r.createdAt })[0].agreementRef"
                           }
                         },
@@ -455,7 +456,7 @@
                       "classes": "govuk-body"
                     }
                   ],
-                  "statusOptions": [
+                  "valueOptions": [
                     {
                       "code": "ACCEPTED",
                       "name": "Accepted",
@@ -519,7 +520,7 @@
                       ]
                     }
                   ],
-                  "statusOptions": [
+                  "valueOptions": [
                     {
                       "code": "ACCEPTED",
                       "name": "Accepted",
@@ -549,6 +550,7 @@
                   }
                 },
                 {
+                  "conditional": "$.payload.answers[?(@property == 'whitePigsCount' && @ > 3)]",
                   "code": "CHECK_WHITE_PIGS",
                   "name": "Check number of White Pigs",
                   "mandatory": true,
@@ -565,7 +567,7 @@
                       "classes": "govuk-body"
                     }
                   ],
-                  "statusOptions": [
+                  "valueOptions": [
                     {
                       "code": "ACCEPTED",
                       "name": "Accepted",
@@ -650,7 +652,7 @@
                     }
                   ],
                   "mandatory": true,
-                  "statusOptions": [
+                  "valueOptions": [
                     {
                       "name": "Sent",
                       "code": "AGREEMENT_SENT_TO_APPLICANT",
@@ -764,7 +766,7 @@
   },
   "definitions": {
     "agreementsService": {
-      "internalUrl": "https://fg-cw-frontend.dev.cdp-int.defra.cloud/agreement/{agreementRef}"
+      "internalUrl": "https://fg-cw-frontend.%ENVIRONMENT%.cdp-int.defra.cloud/cases/{caseId}/agreement/{agreementRef}"
     }
   },
   "templates": {

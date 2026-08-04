@@ -124,15 +124,6 @@
                   "processes": []
                 }
               ]
-            },
-            {
-              "code": "APPLICATION_APPROVED",
-              "validFrom": [
-                {
-                  "code": "IN_REVIEW",
-                  "processes": ["GENERATE_OFFER"]
-                }
-              ]
             }
           ]
         },
@@ -220,17 +211,12 @@
               {
                 "code": "PRE_AWARD:FINAL_REVIEW:APPLICATION_APPROVED",
                 "source": "CW",
-                "mappedTo": "PRE_AWARD:REVIEW_APPLICATION:APPLICATION_APPROVED"
+                "mappedTo": "PRE_AWARD:REVIEW_APPLICATION:AGREEMENT_GENERATING"
               },
               {
                 "code": "PRE_AWARD:FINAL_APPROVAL:APPLICATION_APPROVED",
                 "source": "CW",
-                "mappedTo": "PRE_AWARD:REVIEW_APPLICATION:APPLICATION_APPROVED"
-              },
-              {
-                "code": "PRE_AWARD:FINAL_APPROVAL:APPLICATION_APPROVED",
-                "source": "CW",
-                "mappedTo": "PRE_AWARD:REVIEW_APPLICATION:APPLICATION_APPROVED"
+                "mappedTo": "PRE_AWARD:REVIEW_APPLICATION:AGREEMENT_GENERATING"
               },
               {
                 "code": "PRE_AWARD:REVIEW_APPLICATION:AGREEMENT_GENERATING",
