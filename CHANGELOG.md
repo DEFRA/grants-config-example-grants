@@ -1,5 +1,11 @@
 # grants-config-example-grants
 
+## 3.5.1
+
+### Patch Changes
+
+- 7829696: Fix PMF task status options for Case Working.
+
 ## 3.5.0
 
 ### Minor Changes
