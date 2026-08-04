@@ -30,7 +30,7 @@ GRANTS=(
   pigs-might-fly
 )
 
-ALLOWLIST_BASE_URL='https://raw.githubusercontent.com/DEFRA/grants-ui/main/localstack/config-broker/local-allowlists'
+ALLOWLIST_BASE_URL='https://raw.githubusercontent.com/DEFRA/grants-ui/main/compose/config-broker/local-allowlists'
 
 mkdir -p test/testconfig
 for grant in "${GRANTS[@]}"; do
