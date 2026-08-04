@@ -1,5 +1,11 @@
 # grants-config-example-grants
 
+## 3.5.3
+
+### Patch Changes
+
+- 913af4e: Fix the Pigs Might Fly caseworking received date.
+
 ## 3.5.2
 
 ### Patch Changes
