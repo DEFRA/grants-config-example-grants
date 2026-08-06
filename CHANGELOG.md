@@ -1,5 +1,11 @@
 # grants-config-example-grants
 
+## 3.7.0
+
+### Minor Changes
+
+- b341978: Claims journey and confirmation config at page-level
+
 ## 3.6.0
 
 ### Minor Changes
