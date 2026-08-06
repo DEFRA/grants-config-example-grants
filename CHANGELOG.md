@@ -1,5 +1,11 @@
 # grants-config-example-grants
 
+## 3.6.0
+
+### Minor Changes
+
+- 7d0487a: add input values to pmf
+
 ## 3.5.3
 
 ### Patch Changes
