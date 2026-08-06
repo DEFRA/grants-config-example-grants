@@ -71,35 +71,6 @@ metadata:
         toPath: /confirmation
   permissions:
     enforce: false
-  confirmationContent:
-    panelTitle: 'Details submitted'
-    panelText: 'Your reference number'
-    html: |
-      <h2 class="govuk-heading-m">What happens next</h2>
-      <p class="govuk-body">Defra will email you when your funding offer is available to review. This will be within 5 working days.</p>
-      <p class="govuk-body">You will need to sign in to the service to accept your funding offer.</p>
-      <p class="govuk-body">You should not start work on the actions you have applied for until:</p>
-      <ul class="govuk-list govuk-list--bullet govuk-!-margin-bottom-6">
-        <li>you have accepted your offer</li>
-        <li>the Rural Payments Agency confirms your start date</li>
-      </ul>
-
-      <details class="govuk-details" data-module="govuk-details">
-        <summary class="govuk-details__summary">
-          <span class="govuk-details__summary-text">
-            If you have a question
-          </span>
-        </summary>
-        <div class="govuk-details__text">
-          <p class="govuk-body">Contact the Rural Payments Agency if you have a query.</p>
-          <p class="govuk-body">
-            Telephone: 03000 200 301<br>
-            Monday to Friday, 8:30am to 5pm (except bank holidays)</p>
-          <p class="govuk-body"><a class="govuk-link" href="https://www.gov.uk/call-charges" target="_blank">Find out about call charges (opens in new tab)</a></p>
-          <p class="govuk-body">Email: <a class="govuk-link" href="mailto:ruralpayments@defra.gov.uk">ruralpayments@defra.gov.uk</a></p>
-        </div>
-      </details>
-
 sections:
   - name: example-task-one
     title: Example task one
@@ -339,6 +310,38 @@ pages:
     path: /confirmation
     controller: ConfirmationPageController
     id: 9817cd3a-c9ae-49f1-8a95-076a82504d27
+    config:
+      panelTitle: 'Details submitted'
+      panelText: 'Your reference number'
+    components:
+      - name: confirmationContent
+        id: f846ced5-5771-407a-8beb-9544bd03a7a2
+        type: Html
+        content: |
+          <h2 class="govuk-heading-m">What happens next</h2>
+          <p class="govuk-body">Defra will email you when your funding offer is available to review. This will be within 5 working days.</p>
+          <p class="govuk-body">You will need to sign in to the service to accept your funding offer.</p>
+          <p class="govuk-body">You should not start work on the actions you have applied for until:</p>
+          <ul class="govuk-list govuk-list--bullet govuk-!-margin-bottom-6">
+            <li>you have accepted your offer</li>
+            <li>the Rural Payments Agency confirms your start date</li>
+          </ul>
+
+          <details class="govuk-details" data-module="govuk-details">
+            <summary class="govuk-details__summary">
+              <span class="govuk-details__summary-text">
+                If you have a question
+              </span>
+            </summary>
+            <div class="govuk-details__text">
+              <p class="govuk-body">Contact the Rural Payments Agency if you have a query.</p>
+              <p class="govuk-body">
+                Telephone: 03000 200 301<br>
+                Monday to Friday, 8:30am to 5pm (except bank holidays)</p>
+              <p class="govuk-body"><a class="govuk-link" href="https://www.gov.uk/call-charges" target="_blank">Find out about call charges (opens in new tab)</a></p>
+              <p class="govuk-body">Email: <a class="govuk-link" href="mailto:ruralpayments@defra.gov.uk">ruralpayments@defra.gov.uk</a></p>
+            </div>
+          </details>
 
 conditions:
   - id: fe427aee-bb72-4fb6-99a0-8b2092605efd

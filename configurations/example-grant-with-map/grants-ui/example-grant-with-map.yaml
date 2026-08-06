@@ -23,13 +23,6 @@ metadata:
     expiryDays: 365
   permissions:
     enforce: false
-  confirmationContent:
-    panelTitle: Application submitted
-    panelText: Your reference number
-    html: |
-      <h2 class="govuk-heading-m">What happens next</h2>
-      <p class="govuk-body">Defra will review your selected land parcel and contact you within 5 working days.</p>
-
 pages:
   - title: Apply for Example Grant with Map
     id: a1b2c3d4-0001-0001-0001-000000000001
@@ -78,6 +71,16 @@ pages:
     id: a1b2c3d4-0001-0001-0001-000000000006
     path: /confirmation
     controller: ConfirmationPageController
+    config:
+      panelTitle: Application submitted
+      panelText: Your reference number
+    components:
+      - name: confirmationContent
+        id: b0066d47-e7dc-4eda-9df4-6434abb8eac5
+        type: Html
+        content: |
+          <h2 class="govuk-heading-m">What happens next</h2>
+          <p class="govuk-body">Defra will review your selected land parcel and contact you within 5 working days.</p>
 
 sections: []
 lists: []
