@@ -44,7 +44,7 @@
       "items": { "type": "object" },
       "description": "RepeatPage items, each holding repeatItemName (string) and repeatItemAmount (number)"
     },
-    "landParcels": { "type": "array", "items": { "type": "string" } },
+    "selectedParcelsDisplay": { "type": "string" },
     "detailsConfirmedAt": { "type": "string", "format": "date-time" },
     "applicant": {
       "type": "object",
@@ -139,6 +139,6 @@
     "projectName",
     "projectBudget",
     "repeatItems",
-    "landParcels"
+    "selectedParcelsDisplay"
   ]
 }
