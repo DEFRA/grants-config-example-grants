@@ -43,11 +43,29 @@ metadata:
         toGrantsStatus: 'SUBMITTED'
         toPath: /agreement
 
+      # Ready for claim -> claims journey
+      - fromGrantsStatus: 'SUBMITTED'
+        gasStatus: 'STATUS_AWAITING_CLAIM'
+        toGrantsStatus: 'CLAIM_STARTED'
+        toPath: /claim
+
       # Reopened
       - fromGrantsStatus: REOPENED
         gasStatus: default
         toGrantsStatus: REOPENED
         toPath: /reopened
+
+      # Claim started (steady state) -> stay on claims journey
+      - fromGrantsStatus: CLAIM_STARTED
+        gasStatus: default
+        toGrantsStatus: CLAIM_STARTED
+        toPath: /claim
+
+      # Claim submitted (steady state) -> stay on claim submitted page
+      - fromGrantsStatus: CLAIM_SUBMITTED
+        gasStatus: default
+        toGrantsStatus: CLAIM_SUBMITTED
+        toPath: /claim-confirmation
 
       # Submitted -> confirmation (default for most GAS statuses)
       - fromGrantsStatus: SUBMITTED
@@ -924,6 +942,7 @@ pages:
     path: /print-submitted-application
     controller: PrintSubmittedApplicationController
     id: 9817cd3a-c9ae-49f1-8a95-076a82504d40
+
   # Off-journey page: never reached by the default V2 page walk because it is
   # positioned after the final journey page. It is only entered via a direct
   # link or a grantRedirectRule. Its custom controller reads the `next.path`
@@ -942,6 +961,70 @@ pages:
           <p class="govuk-body">Your application <strong>{{ context.referenceNumber }}</strong> has been reopened. Click continue to check your submitted answers and change them.</p>
     next:
       - path: /summary
+
+
+  # ==========================================
+  # Claims journey
+  # ==========================================
+
+  - title: Example claim start page
+    id: 25e9e991-5cc4-46af-bebb-415393fb92e7
+    path: /claim
+    controller: StartClaimPageController
+    components:
+      - name: claimHtml
+        id: 1483e488-c18d-443d-a866-73f51d1479b9
+        type: Html
+        content: |
+          <p class="govuk-body">Example claim guidance showing any data imported from APIs like claim amount <span class="govuk-!-font-weight-bold">{{ (totalClaimAmountPence / 100) | formatCurrency }}</span></p>
+    config:
+      hideBackLink: true
+      submitButtonText: Continue
+      dataSources:
+        - name: claims
+          items:
+            - totalEligibleArea
+            - unit
+            - totalClaimAmountPence
+      rpaDetails:
+        title: If you need help with your claim
+        content: |
+          <p class="govuk-body">Phone: 03000 200 301</p>
+          <p class="govuk-body">Monday to Friday, 8:30am to 5pm (except bank holidays)</p>
+          <p class="govuk-body"><a href="https://www.gov.uk/call-charges" class="govuk-link" rel="noreferrer noopener" target="_blank">Find out about call charges (opens in a new tab)</a></p>
+          <p class="govuk-body">Email: <a class="govuk-link" href="mailto:ruralpayments@defra.gov.uk">ruralpayments@defra.gov.uk</a></p>
+          <p class="govuk-body">We aim to respond to emails within 10 working days.</p>
+
+  - title: Example claim declaration page
+    id: 3e063a3f-846d-4e2c-8a1a-7d088ffdef4c
+    path: /claim-declaration
+    controller: DeclarationPageController
+    config:
+      declarationType: claim
+      submitButtonText: Confirm and submit
+      showSupportDetails: false
+    components:
+      - name: declarationContent
+        id: aa791320-b351-4dae-91c9-e133d6ae07ac
+        type: Html
+        content: |
+          <p class="govuk-body">Example declaration text.</p>
+
+  - title: Example claim confirmation page
+    id: 0f62bdd3-5cb1-4d9d-9d90-10c440ee2301
+    path: /claim-confirmation
+    controller: ConfirmationPageController
+    config:
+      confirmationType: claim
+      panelTitle: 'Claim submitted'
+      panelText: 'Your claim reference number'
+    components:
+      - name: claimConfirmationContent
+        id: a7fd7085-ebcc-4ac7-b522-5b70940d5218
+        type: Html
+        content: |
+          <h2 class="govuk-heading-m">What happens next</h2>
+          <p class="govuk-body">We aim to pay valid claims within 2 months of receiving them.</p>
 
 lists:
   - title: RadiosField List
