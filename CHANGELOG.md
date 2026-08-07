@@ -1,5 +1,11 @@
 # grants-config-example-grants
 
+## 3.8.0
+
+### Minor Changes
+
+- 7322be1: Example claims journey
+
 ## 3.7.0
 
 ### Minor Changes
