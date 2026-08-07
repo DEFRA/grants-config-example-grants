@@ -8,6 +8,9 @@ metadata:
   supportEmail: support@defra.gov.uk
   enabledLandActions:
     - 'CMOR1'
+    - 'CLIG3'
+    - 'SCR2'
+    - 'CSAM3'
   notificationBanner:
     enabled: true
     titleText: Important
