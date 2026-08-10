@@ -976,16 +976,12 @@ pages:
         id: 1483e488-c18d-443d-a866-73f51d1479b9
         type: Html
         content: |
+          <p class="govuk-body">This example is configured with the <code>woodland-claim</code> payment strategy.</p>
           <p class="govuk-body">Example claim guidance showing any data imported from APIs like claim amount <span class="govuk-!-font-weight-bold">{{ (totalClaimAmountPence / 100) | formatCurrency }}</span></p>
     config:
       hideBackLink: true
       submitButtonText: Continue
-      dataSources:
-        - name: claims
-          items:
-            - totalEligibleArea
-            - unit
-            - totalClaimAmountPence
+      paymentStrategy: woodland-claim
       rpaDetails:
         title: If you need help with your claim
         content: |
