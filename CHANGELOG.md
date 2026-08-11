@@ -1,5 +1,11 @@
 # grants-config-example-grants
 
+## 3.9.0
+
+### Minor Changes
+
+- d5c650f: Claims journey with payment strategy
+
 ## 3.8.0
 
 ### Minor Changes
