@@ -2,6 +2,7 @@ engine: V2
 name: Example grant with auth
 metadata:
   id: 9f9c5ec4-e237-4e6e-b67c-f232a6377d76
+  surveyLabel: Example Grant with Auth
   enabledInProd: false
   phase: public-beta
   referenceNumberPrefix: EGWA
