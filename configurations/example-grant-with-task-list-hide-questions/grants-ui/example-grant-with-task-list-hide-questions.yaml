@@ -2,6 +2,7 @@ engine: V2
 name: Example grant with task list - hide questions
 metadata:
   id: 19d14e60-e5bc-40f6-8f32-e1eaa7a0e7af
+  surveyLabel: Example grant with task list hide questions
   enabledInProd: false
   referenceNumberPrefix: EGWTHQ
   supportEmail: support@defra.gov.uk

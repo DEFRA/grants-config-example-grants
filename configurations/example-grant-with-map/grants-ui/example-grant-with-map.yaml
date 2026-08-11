@@ -2,6 +2,7 @@ engine: V2
 name: Example grant with map
 metadata:
   id: 3a7f1c2e-8b4d-4e9a-b5f6-c2d3e4f5a6b7
+  surveyLabel: Example grant with map
   enabledInProd: false
   enabledLandActions:
     - 'CLIG3'
