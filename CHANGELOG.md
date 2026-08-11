@@ -1,5 +1,11 @@
 # grants-config-example-grants
 
+## 3.10.0
+
+### Minor Changes
+
+- 0461c9b: Survey config
+
 ## 3.9.0
 
 ### Minor Changes
