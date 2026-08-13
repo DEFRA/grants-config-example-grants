@@ -1,5 +1,11 @@
 # grants-config-example-grants
 
+## 3.11.0
+
+### Minor Changes
+
+- 70bc5b5: Add the Pigs Might Fly Agreement definition
+
 ## 3.10.0
 
 ### Minor Changes
