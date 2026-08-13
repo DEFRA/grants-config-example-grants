@@ -1,5 +1,11 @@
 # grants-config-example-grants
 
+## 3.11.1
+
+### Patch Changes
+
+- a326f75: Republish the Pigs Might Fly Agreement definition
+
 ## 3.11.0
 
 ### Minor Changes
