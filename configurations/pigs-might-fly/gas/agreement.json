@@ -1,6 +1,6 @@
 {
-  "code": "pigs-might-fly",
   "agreementNumberPrefix": "PMF",
+  "code": "pigs-might-fly",
   "processDefinitions": {
     "GENERATE_OFFER": {
       "type": "endpoint",
