@@ -360,8 +360,48 @@
                       "mandatory": true
                     }
                   }
+                },
+                {
+                  "targetPosition": "PRE_AWARD:REVIEW_APPLICATION:WITHDRAWAL_REQUESTED",
+                  "checkTasks": false,
+                  "action": {
+                    "code": "WITHDRAW_APPLICATION",
+                    "name": "Withdraw",
+                    "checkTasks": false,
+                    "classes": null,
+                    "confirm": null,
+                    "comment": {
+                      "label": "Explain this decision",
+                      "helpText": "You must include an explanation for auditing purposes.",
+                      "mandatory": true
+                    }
+                  }
                 }
               ]
+            },
+            {
+              "code": "WITHDRAWAL_REQUESTED",
+              "name": "Withdrawal requested",
+              "theme": "WARN",
+              "description": "Application withdrawal has been requested",
+              "interactive": false,
+              "transitions": [
+                {
+                  "targetPosition": "PRE_AWARD:REVIEW_APPLICATION:APPLICATION_WITHDRAWN",
+                  "checkTasks": false,
+                  "action": null
+                }
+              ],
+              "closes": false
+            },
+            {
+              "code": "APPLICATION_WITHDRAWN",
+              "name": "Withdrawn",
+              "theme": "WARN",
+              "description": "Application has been withdrawn",
+              "interactive": false,
+              "transitions": [],
+              "closes": true
             },
             {
               "closes": null,
@@ -716,9 +756,49 @@
                       "mandatory": false
                     }
                   }
+                },
+                {
+                  "targetPosition": "PRE_AWARD:REVIEW_OFFER:WITHDRAWAL_REQUESTED",
+                  "checkTasks": false,
+                  "action": {
+                    "code": "WITHDRAW_APPLICATION",
+                    "name": "Withdraw",
+                    "checkTasks": false,
+                    "classes": null,
+                    "confirm": null,
+                    "comment": {
+                      "label": "Explain this decision",
+                      "helpText": "You must include an explanation for auditing purposes.",
+                      "mandatory": true
+                    }
+                  }
                 }
               ],
               "closes": false
+            },
+            {
+              "code": "WITHDRAWAL_REQUESTED",
+              "name": "Withdrawal requested",
+              "theme": "WARN",
+              "description": "Application withdrawal has been requested",
+              "interactive": false,
+              "transitions": [
+                {
+                  "targetPosition": "PRE_AWARD:REVIEW_OFFER:APPLICATION_WITHDRAWN",
+                  "checkTasks": false,
+                  "action": null
+                }
+              ],
+              "closes": false
+            },
+            {
+              "code": "APPLICATION_WITHDRAWN",
+              "name": "Withdrawn",
+              "theme": "WARN",
+              "description": "Application has been withdrawn",
+              "interactive": false,
+              "transitions": [],
+              "closes": true
             }
           ],
           "taskGroups": [
@@ -794,9 +874,54 @@
                   "targetPosition": "POST_AGREEMENT_MONITORING:MONITORING:AGREEMENT_ACCEPTED",
                   "checkTasks": false,
                   "action": null
+                },
+                {
+                  "targetPosition": "PRE_AWARD:CUSTOMER_AGREEMENT_REVIEW:WITHDRAWAL_REQUESTED",
+                  "checkTasks": false,
+                  "action": {
+                    "code": "WITHDRAW_APPLICATION",
+                    "name": "Withdraw",
+                    "checkTasks": false,
+                    "classes": null,
+                    "confirm": null,
+                    "comment": {
+                      "label": "Explain this decision",
+                      "helpText": "You must include an explanation for auditing purposes.",
+                      "mandatory": true
+                    }
+                  }
                 }
               ],
               "closes": false
+            },
+            {
+              "code": "WITHDRAWAL_REQUESTED",
+              "name": "Withdrawal requested",
+              "theme": "WARN",
+              "description": "Application withdrawal has been requested",
+              "interactive": false,
+              "transitions": [
+                {
+                  "targetPosition": "PRE_AWARD:CUSTOMER_AGREEMENT_REVIEW:APPLICATION_WITHDRAWN",
+                  "checkTasks": false,
+                  "action": null
+                },
+                {
+                  "targetPosition": "POST_AGREEMENT_MONITORING:MONITORING:AGREEMENT_ACCEPTED",
+                  "checkTasks": false,
+                  "action": null
+                }
+              ],
+              "closes": false
+            },
+            {
+              "code": "APPLICATION_WITHDRAWN",
+              "name": "Withdrawn",
+              "theme": "WARN",
+              "description": "Application has been withdrawn",
+              "interactive": false,
+              "transitions": [],
+              "closes": true
             }
           ],
           "taskGroups": []
