@@ -1,5 +1,11 @@
 # grants-config-example-grants
 
+## 3.12.0
+
+### Minor Changes
+
+- 4998a36: Add the Pigs Might Fly withdrawal workflow, Agreement transition, and terminal content.
+
 ## 3.11.1
 
 ### Patch Changes
