@@ -40,7 +40,8 @@ pages:
           <p class="govuk-body">You will:</p>
           <ul class="govuk-list govuk-list--bullet">
             <li>select a land parcel on an interactive map</li>
-            <li>check your answers</li>
+            <li>select actions for that land parcel</li>
+            <li>check your land, actions and payment</li>
             <li>submit your application</li>
           </ul>
   - title: Select a land parcel
@@ -63,6 +64,15 @@ pages:
     path: /select-actions-for-land-parcel
     controller: SelectActionsPageController
 
+  - title: Your land and actions
+    id: a1b2c3d4-0001-0001-0001-000000000012
+    path: /confirm-land-and-actions
+    controller: ConfirmLandAndActionsPageController
+    config:
+      redirects:
+        next: /summary
+        addAnotherLandParcel: /select-land-parcel
+
   - title: Check your answers
     id: a1b2c3d4-0001-0001-0001-000000000011
     path: /summary
@@ -82,6 +92,20 @@ pages:
         content: |
           <h2 class="govuk-heading-m">What happens next</h2>
           <p class="govuk-body">Defra will review your selected land parcel and contact you within 5 working days.</p>
+
+  - title: Remove land parcel
+    id: a1b2c3d4-0001-0001-0001-000000000013
+    path: /remove-parcel
+    controller: RemoveActionPageController
+    config:
+      returnPath: /confirm-land-and-actions
+
+  - title: Remove action
+    id: a1b2c3d4-0001-0001-0001-000000000014
+    path: /remove-action
+    controller: RemoveActionPageController
+    config:
+      returnPath: /confirm-land-and-actions
 
 sections: []
 lists: []
