@@ -1355,7 +1355,7 @@
                     }
                   ],
                   "mandatory": true,
-                  "statusOptions": [
+                  "valueOptions": [
                     {
                       "code": "CONFIRM",
                       "name": "Confirmed",
