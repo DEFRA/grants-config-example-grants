@@ -1,5 +1,11 @@
 # grants-config-example-grants
 
+## 3.13.0
+
+### Minor Changes
+
+- 4e85846: Add the Pigs Might Fly return to customer workflow, Agreement cancellation transition, and cancelled content.
+
 ## 3.12.0
 
 ### Minor Changes
