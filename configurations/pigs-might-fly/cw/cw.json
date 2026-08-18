@@ -758,6 +758,77 @@
                   }
                 },
                 {
+                  "targetPosition": "PRE_AWARD:REVIEW_OFFER:AMENDMENT_REQUESTED",
+                  "checkTasks": false,
+                  "action": {
+                    "code": "RETURN_TO_CUSTOMER",
+                    "name": "Return to customer",
+                    "checkTasks": false,
+                    "classes": null,
+                    "confirm": {
+                      "details": [
+                        {
+                          "component": "heading",
+                          "text": "Are you sure you want to return this application to the customer?",
+                          "level": 1,
+                          "classes": "govuk-heading-l"
+                        },
+                        {
+                          "component": "paragraph",
+                          "text": "Returning an application to the customer will:"
+                        },
+                        {
+                          "component": "unordered-list",
+                          "classes": "govuk-list govuk-list--bullet",
+                          "items": [
+                            {
+                              "component": "text",
+                              "text": "cancel the current application"
+                            },
+                            {
+                              "component": "text",
+                              "text": "allow the customer to edit and submit a duplicate, draft application"
+                            }
+                          ]
+                        }
+                      ],
+                      "yes": {
+                        "component": "container",
+                        "items": [
+                          {
+                            "component": "text",
+                            "text": "Yes, I want to return this application to the customer"
+                          },
+                          {
+                            "component": "paragraph",
+                            "text": "All review tasks will need to be started again once the returned application is submitted.",
+                            "classes": "govuk-hint"
+                          }
+                        ]
+                      },
+                      "no": {
+                        "component": "container",
+                        "items": [
+                          {
+                            "component": "text",
+                            "text": "No, I do not want to return this application to the customer"
+                          },
+                          {
+                            "component": "paragraph",
+                            "text": "Go back to reviewing the current application.",
+                            "classes": "govuk-hint"
+                          }
+                        ]
+                      }
+                    },
+                    "comment": {
+                      "label": "Explain this decision",
+                      "helpText": "You must include a reason for returning to customer.",
+                      "mandatory": true
+                    }
+                  }
+                },
+                {
                   "targetPosition": "PRE_AWARD:REVIEW_OFFER:WITHDRAWAL_REQUESTED",
                   "checkTasks": false,
                   "action": {
@@ -775,6 +846,31 @@
                 }
               ],
               "closes": false
+            },
+            {
+              "code": "AMENDMENT_REQUESTED",
+              "name": "Returned to customer",
+              "theme": "WARN",
+              "description": "The return of the application to the customer for amendment has been requested",
+              "interactive": false,
+              "transitions": [
+                {
+                  "targetPosition": "PRE_AWARD:REVIEW_OFFER:APPLICATION_AMEND",
+                  "checkTasks": false,
+                  "action": null
+                }
+              ],
+              "closes": false
+            },
+            {
+              "code": "APPLICATION_AMEND",
+              "name": "Returned to customer",
+              "theme": "WARN",
+              "description": "The application has been returned to the customer",
+              "interactive": false,
+              "transitions": [],
+              "closes": true,
+              "hideTaskGroups": true
             },
             {
               "code": "WITHDRAWAL_REQUESTED",
@@ -876,6 +972,77 @@
                   "action": null
                 },
                 {
+                  "targetPosition": "PRE_AWARD:CUSTOMER_AGREEMENT_REVIEW:AMENDMENT_REQUESTED",
+                  "checkTasks": false,
+                  "action": {
+                    "code": "RETURN_TO_CUSTOMER",
+                    "name": "Return to customer",
+                    "checkTasks": false,
+                    "classes": null,
+                    "confirm": {
+                      "details": [
+                        {
+                          "component": "heading",
+                          "text": "Are you sure you want to return this application to the customer?",
+                          "level": 1,
+                          "classes": "govuk-heading-l"
+                        },
+                        {
+                          "component": "paragraph",
+                          "text": "Returning an application to the customer will:"
+                        },
+                        {
+                          "component": "unordered-list",
+                          "classes": "govuk-list govuk-list--bullet",
+                          "items": [
+                            {
+                              "component": "text",
+                              "text": "cancel the current application"
+                            },
+                            {
+                              "component": "text",
+                              "text": "allow the customer to edit and submit a duplicate, draft application"
+                            }
+                          ]
+                        }
+                      ],
+                      "yes": {
+                        "component": "container",
+                        "items": [
+                          {
+                            "component": "text",
+                            "text": "Yes, I want to return this application to the customer"
+                          },
+                          {
+                            "component": "paragraph",
+                            "text": "All review tasks will need to be started again once the returned application is submitted.",
+                            "classes": "govuk-hint"
+                          }
+                        ]
+                      },
+                      "no": {
+                        "component": "container",
+                        "items": [
+                          {
+                            "component": "text",
+                            "text": "No, I do not want to return this application to the customer"
+                          },
+                          {
+                            "component": "paragraph",
+                            "text": "Go back to reviewing the current application.",
+                            "classes": "govuk-hint"
+                          }
+                        ]
+                      }
+                    },
+                    "comment": {
+                      "label": "Explain this decision",
+                      "helpText": "You must include a reason for returning to customer.",
+                      "mandatory": true
+                    }
+                  }
+                },
+                {
                   "targetPosition": "PRE_AWARD:CUSTOMER_AGREEMENT_REVIEW:WITHDRAWAL_REQUESTED",
                   "checkTasks": false,
                   "action": {
@@ -893,6 +1060,36 @@
                 }
               ],
               "closes": false
+            },
+            {
+              "code": "AMENDMENT_REQUESTED",
+              "name": "Returned to customer",
+              "theme": "WARN",
+              "description": "The return of the application to the customer for amendment has been requested",
+              "interactive": false,
+              "transitions": [
+                {
+                  "targetPosition": "PRE_AWARD:CUSTOMER_AGREEMENT_REVIEW:APPLICATION_AMEND",
+                  "checkTasks": false,
+                  "action": null
+                },
+                {
+                  "targetPosition": "POST_AGREEMENT_MONITORING:MONITORING:AGREEMENT_ACCEPTED",
+                  "checkTasks": false,
+                  "action": null
+                }
+              ],
+              "closes": false
+            },
+            {
+              "code": "APPLICATION_AMEND",
+              "name": "Returned to customer",
+              "theme": "WARN",
+              "description": "The application has been returned to the customer",
+              "interactive": false,
+              "transitions": [],
+              "closes": true,
+              "hideTaskGroups": true
             },
             {
               "code": "WITHDRAWAL_REQUESTED",
