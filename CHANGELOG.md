@@ -1,5 +1,11 @@
 # grants-config-example-grants
 
+## 3.14.0
+
+### Minor Changes
+
+- e7a11fe: Add the Pigs Might Fly termination workflow, Agreement transition, and terminated content.
+
 ## 3.13.0
 
 ### Minor Changes
