@@ -7,6 +7,11 @@ metadata:
   phase: public-beta
   referenceNumberPrefix: EGWA
   supportEmail: support@defra.gov.uk
+  enabledLandActions:
+    - 'CMOR1'
+    - 'CLIG3'
+    - 'SCR2'
+    - 'CSAM3'
   notificationBanner:
     enabled: true
     titleText: Important
@@ -23,7 +28,7 @@ metadata:
   grantRedirectRules:
     preSubmission:
       # Typically rules for unsubmitted applications
-      - toPath: /summary
+      - toPath: /confirm-land-and-actions
 
     postSubmission:
       # Cleared
@@ -832,66 +837,30 @@ pages:
         shortDescription: Amount
         id: e0d3f7a4-5b6c-7d8e-9f0a-1b2c3d4e5f6a
     id: c8b1d5e2-3f4a-5b6c-7d8e-9f0a1b2c3d4e
-  - title: Select all the eligible land parcels for the location of your woodland
-    controller: CommonSelectLandParcelPageController
+  - title: Select a land parcel
+    controller: MapSelectPageController
     components:
-      - name: landParcels
-        type: CheckboxesField
-        title: Select land parcels
-    config:
-      enableMultipleParcelSelect: true
-      topSection: |
-        <div class="govuk-body">
-          <p>
-            You must include all woodland on your holding in your application. A holding
-            is all the land in the same geographical location that is managed as a unit.
-          </p>
-
-          <p>
-            For larger holdings, this is all woodland within the same geographical
-            location.
-          </p>
-
-          <p>
-            Land parcels must be entirely within England and defined as an area of land
-            that:
-          </p>
-
-          <ul class="govuk-list govuk-list--bullet">
-            <li>is at least 0.5 hectares</li>
-            <li>has an average width of at least 20 metres</li>
-            <li>
-              is a group or line of trees that are, or will reach, at least 5 metres in height
-            </li>
-            <li>has a crown cover of more than 20% of the ground area</li>
-          </ul>
-
-          <p>
-            The woodland must be larger than 0.5 hectares in total. The total area for the
-            application can be made up of separate blocks of woodland but the minimum
-            block size must be 0.5ha.
-          </p>
-
-          <p>
-            To find out more about what land is eligible for a WMP read our
-            <a href="#" class="govuk-link">
-              Applicant's guide: PA3 Woodland management plan 2026 guidance
-            </a>.
-          </p>
-        </div>
-      supportDetailsSummaryText: Get help with your application
-      supportDetailsHtml: |
-        <p>Phone: <a href="tel:02080262395" class="telephone-link" aria-label="Call us on 020 8026 2395">020 8026 2395</a></p>
-        <p>Monday to Friday, 8:30am to 5pm, except bank holidays</p>
-        <p>
-          <a href='https://www.gov.uk/call-charges' target='_blank'>
-            Find out about call charges (opens in new tab)
-          </a>
-        </p>
-        <p>Email: <a href='mailto:farmpayments@rpa.gov.uk'>farmpayments@rpa.gov.uk</a></p>
-        <p>We aim to respond to emails within 10 working days</p>
+      - name: selectedParcelsDisplay
+        id: 7c0abbb3-f6f2-45db-a545-0887f47293d6
+        type: HiddenField
+        title: Land parcel
+        shortDescription: Land parcel
+        options:
+          required: false
     path: /select-land-parcel
     id: f9f1a33b-2fb5-4418-951b-680067efc179
+  - title: Select actions for land parcel
+    controller: SelectActionsPageController
+    path: /select-actions-for-land-parcel
+    id: ba9e6616-7eaf-4316-a091-b72f6dc700b9
+  - title: Your land and actions
+    controller: ConfirmLandAndActionsPageController
+    path: /confirm-land-and-actions
+    id: 24c73cce-ed93-4326-ae27-3830721bf672
+    config:
+      redirects:
+        next: /summary
+        addAnotherLandParcel: /select-land-parcel
   - title: Check your answers
     path: /summary
     controller: CheckResponsesPageController
@@ -962,6 +931,21 @@ pages:
           <p class="govuk-body">Your application <strong>{{ context.referenceNumber }}</strong> has been reopened. Click continue to check your submitted answers and change them.</p>
     next:
       - path: /summary
+  # Direct-only utility pages: positioned after the final off-journey page so the
+  # generic V2 page walk never enters them. Reached only via Change/Remove links
+  # on /confirm-land-and-actions, and they return there via config.returnPath.
+  - title: Remove land parcel
+    path: /remove-parcel
+    controller: RemoveActionPageController
+    id: b785897e-6108-4dd8-a0cb-e6bce0bd3f74
+    config:
+      returnPath: /confirm-land-and-actions
+  - title: Remove action
+    path: /remove-action
+    controller: RemoveActionPageController
+    id: dfb200c5-d82f-4541-94f2-13bc1d655692
+    config:
+      returnPath: /confirm-land-and-actions
 
 
   # ==========================================
