@@ -48,6 +48,6 @@ done
 curl -fsSL "${CURL_ARGS[@]}"
 
 mkdir -p test/testconfig/schemas
-cp configurations/example-grant-with-auth/grants-ui/example-grant-with-auth-submission.schema.json test/testconfig/schemas/
+cp configurations/example-grant-with-auth/gas/gas.json test/testconfig/schemas/example-grant-with-auth-submission.schema.json
 
 "$(dirname "$0")/docker-compose-smoke-test.sh"
