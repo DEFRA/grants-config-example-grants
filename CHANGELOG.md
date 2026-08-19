@@ -1,5 +1,11 @@
 # grants-config-example-grants
 
+## 3.14.1
+
+### Patch Changes
+
+- c88ec83: Move the example agreement action page outside its validation rules.
+
 ## 3.14.0
 
 ### Minor Changes
