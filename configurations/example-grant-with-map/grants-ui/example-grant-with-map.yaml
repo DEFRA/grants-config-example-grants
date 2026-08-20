@@ -70,7 +70,6 @@ pages:
     controller: ConfirmLandAndActionsPageController
     config:
       redirects:
-        next: /summary
         addAnotherLandParcel: /select-land-parcel
 
   - title: Check your answers
