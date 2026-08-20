@@ -1,5 +1,11 @@
 # grants-config-example-grants
 
+## 3.14.2
+
+### Patch Changes
+
+- b81bfa4: Enable the land and actions payment summary flow in example-grant-with-map
+
 ## 3.14.1
 
 ### Patch Changes
