@@ -1,5 +1,11 @@
 # grants-config-example-grants
 
+## 3.15.0
+
+### Minor Changes
+
+- fdb7a26: Claims permissions
+
 ## 3.14.2
 
 ### Patch Changes
