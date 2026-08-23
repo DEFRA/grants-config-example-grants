@@ -1,5 +1,11 @@
 # grants-config-example-grants
 
+## 3.16.0
+
+### Minor Changes
+
+- 4a0670c: FGP-1369 move PMF payment configuration from `gas/agreement.json` to `gas/payment.json`.
+
 ## 3.15.0
 
 ### Minor Changes
