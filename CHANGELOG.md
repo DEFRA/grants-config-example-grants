@@ -1,5 +1,11 @@
 # grants-config-example-grants
 
+## 3.16.1
+
+### Patch Changes
+
+- ed1f1cf: Fix the Pigs Might Fly return-to-customer redirect to load the configured check answers page.
+
 ## 3.16.0
 
 ### Minor Changes
