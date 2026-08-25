@@ -1,5 +1,11 @@
 # grants-config-example-grants
 
+## 3.16.2
+
+### Patch Changes
+
+- 0e95f6c: Show the PMF agreement end date in the casework agreement summary.
+
 ## 3.16.1
 
 ### Patch Changes
