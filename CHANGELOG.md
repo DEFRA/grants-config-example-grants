@@ -1,5 +1,11 @@
 # grants-config-example-grants
 
+## 3.16.3
+
+### Patch Changes
+
+- 957b3eb: Migrate every Pigs Might Fly agreement page to explicit component trees.
+
 ## 3.16.2
 
 ### Patch Changes
