@@ -15,7 +15,7 @@ metadata:
       - fromGrantsStatus: SUBMITTED
         gasStatus: APPLICATION_AMEND
         toGrantsStatus: REOPENED
-        toPath: /summary
+        toPath: /check-answers
 
       # Customer-visible agreement statuses
       - fromGrantsStatus: SUBMITTED
@@ -27,7 +27,7 @@ metadata:
       - fromGrantsStatus: REOPENED
         gasStatus: default
         toGrantsStatus: REOPENED
-        toPath: /summary
+        toPath: /check-answers
 
       # Submitted -> confirmation
       - fromGrantsStatus: SUBMITTED

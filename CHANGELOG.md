@@ -1,5 +1,35 @@
 # grants-config-example-grants
 
+## 3.16.2
+
+### Patch Changes
+
+- 0e95f6c: Show the PMF agreement end date in the casework agreement summary.
+
+## 3.16.1
+
+### Patch Changes
+
+- ed1f1cf: Fix the Pigs Might Fly return-to-customer redirect to load the configured check answers page.
+
+## 3.16.0
+
+### Minor Changes
+
+- 4a0670c: FGP-1369 move PMF payment configuration from `gas/agreement.json` to `gas/payment.json`.
+
+## 3.15.0
+
+### Minor Changes
+
+- fdb7a26: Claims permissions
+
+## 3.14.2
+
+### Patch Changes
+
+- b81bfa4: Enable the land and actions payment summary flow in example-grant-with-map
+
 ## 3.14.1
 
 ### Patch Changes
