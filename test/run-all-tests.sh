@@ -50,4 +50,16 @@ curl -fsSL "${CURL_ARGS[@]}"
 mkdir -p test/testconfig/schemas
 cp configurations/example-grant-with-auth/grants-ui/example-grant-with-auth-submission.schema.json test/testconfig/schemas/
 
+# grants-config-land-grants is a separate repo that defines the land action
+# definitions (SCR2, CSAM3, CLIG3, ...) that land-grants-backend serves to the
+# app. The example-grant-with-map acceptance scenarios depend on those actions
+# being rendered, so pull the config the same way the sibling grants-config
+# repos do (a shallow clone) and mount it into the broker config, pinned to
+# @0.0.0 and marked active in release.yml alongside the example grants.
+LAND_GRANTS_TMP="$(mktemp -d)"
+git clone --depth 1 https://github.com/DEFRA/grants-config-land-grants.git "$LAND_GRANTS_TMP"
+mkdir -p test/testconfig/land-grants@0.0.0
+cp -r "$LAND_GRANTS_TMP/configurations/land-grants/." test/testconfig/land-grants@0.0.0/
+rm -rf "$LAND_GRANTS_TMP"
+
 "$(dirname "$0")/docker-compose-smoke-test.sh"

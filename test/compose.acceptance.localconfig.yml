@@ -1,4 +1,5 @@
 services:
   grants-ui-acceptance-tests:
+    platform: linux/amd64
     volumes:
       - ${PWD}/test/testconfig/schemas:/home/node/app/schemas:ro
