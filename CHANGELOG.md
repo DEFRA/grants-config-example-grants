@@ -1,5 +1,11 @@
 # grants-config-example-grants
 
+## 3.17.1
+
+### Patch Changes
+
+- ffbbb2d: Remove obsolete schema file
+
 ## 3.17.0
 
 ### Minor Changes
