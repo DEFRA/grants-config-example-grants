@@ -1,5 +1,11 @@
 # grants-config-example-grants
 
+## 3.17.0
+
+### Minor Changes
+
+- 4ac02d2: Multiple claims
+
 ## 3.16.3
 
 ### Patch Changes
