@@ -48,7 +48,7 @@ done
 curl -fsSL "${CURL_ARGS[@]}"
 
 mkdir -p test/testconfig/schemas
-cp configurations/example-grant-with-auth/grants-ui/example-grant-with-auth-submission.schema.json test/testconfig/schemas/
+cp configurations/example-grant-with-auth/gas/gas.json test/testconfig/schemas/example-grant-with-auth-submission.schema.json
 
 # grants-config-land-grants is a separate repo that defines the land action
 # definitions (SCR2, CSAM3, CLIG3, ...) that land-grants-backend serves to the
