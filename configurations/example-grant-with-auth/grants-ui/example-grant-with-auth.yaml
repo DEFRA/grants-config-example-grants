@@ -39,15 +39,15 @@ metadata:
         toPath: /reopened
 
       # Offer sent, withdrawn, accepted -> agreements service
-      - fromGrantsStatus: 'SUBMITTED'
-        gasStatus: 'OFFER_SENT,OFFER_WITHDRAWN,OFFER_ACCEPTED'
-        toGrantsStatus: 'SUBMITTED'
+      - fromGrantsStatus: SUBMITTED
+        gasStatus: OFFER_SENT,OFFER_WITHDRAWN,OFFER_ACCEPTED
+        toGrantsStatus: SUBMITTED
         toPath: /agreement
 
       # Ready for claim -> claims journey
-      - fromGrantsStatus: 'SUBMITTED'
-        gasStatus: 'STATUS_AWAITING_CLAIM'
-        toGrantsStatus: 'CLAIM_STARTED'
+      - fromGrantsStatus: SUBMITTED,CLAIM_SUBMITTED
+        gasStatus: STATUS_AWAITING_CLAIM
+        toGrantsStatus: CLAIM_STARTED
         toPath: /claim
 
       # Reopened

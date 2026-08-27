@@ -35,3 +35,9 @@ releases:
     environments:
       - name: local
         status: active
+  - name: land-grants
+    version: 0.0.0
+    notes: For acceptance tests
+    environments:
+      - name: local
+        status: active
