@@ -59,7 +59,7 @@
     "husky": "9.1.7",
     "neostandard": "0.13.0",
     "prettier": "3.9.6",
-    "vitest": "4.1.10",
+    "vitest": "4.1.11",
     "vitest-fetch-mock": "0.4.5"
   },
   "overrides": {
