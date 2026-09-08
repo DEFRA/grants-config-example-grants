@@ -1,5 +1,11 @@
 # grants-config-example-grants
 
+## 3.18.0
+
+### Minor Changes
+
+- 0e3d4f9: Update check-details to use new config.rpaDetails component
+
 ## 3.17.1
 
 ### Patch Changes
