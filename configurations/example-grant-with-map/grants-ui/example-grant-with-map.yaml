@@ -65,10 +65,10 @@ pages:
     controller: SelectActionsPageController
     config:
       links:
-        SFI Hefer:
-          url: https://www.gov.uk/government/publications/sustainable-farming-incentive-2026-sfi26/sfi26-scheme-rules-and-guidance#how-to-request-an-sfi-hefer
-        SSI Consent:
-          url: ./fptt-information#sec-10-get-all-necessary-regulatory-consents-permissions-and-licences-in-place
+        sfi_hefer:
+          href: https://www.gov.uk/government/publications/sustainable-farming-incentive-2026-sfi26/sfi26-scheme-rules-and-guidance#how-to-request-an-sfi-hefer
+        sssi_consent:
+          href: ./fptt-information#sec-10-get-all-necessary-regulatory-consents-permissions-and-licences-in-place
 
   - title: Your land and actions
     id: a1b2c3d4-0001-0001-0001-000000000012
