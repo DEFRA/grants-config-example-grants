@@ -1,5 +1,11 @@
 # grants-config-example-grants
 
+## 3.18.1
+
+### Patch Changes
+
+- 5ad2961: TGC-1634: Configure consent guidance links for the example map select-actions page.
+
 ## 3.18.0
 
 ### Minor Changes
