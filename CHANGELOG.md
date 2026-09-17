@@ -1,5 +1,11 @@
 # grants-config-example-grants
 
+## 3.20.1
+
+### Patch Changes
+
+- 538ef12: updating variant
+
 ## 3.20.0
 
 ### Minor Changes
