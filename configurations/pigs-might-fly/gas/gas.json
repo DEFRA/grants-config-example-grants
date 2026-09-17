@@ -3,7 +3,7 @@
   "metadata": {
     "description": "Pigs Might Fly",
     "startDate": {
-      "$date": "2100-01-01T01:00:00Z"
+      "$date": "2100-01-01T00:00:00Z"
     }
   },
   "actions": [
