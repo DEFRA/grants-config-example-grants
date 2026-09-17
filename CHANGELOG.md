@@ -1,5 +1,11 @@
 # grants-config-example-grants
 
+## 3.19.0
+
+### Minor Changes
+
+- 206c939: adding variant version
+
 ## 3.18.1
 
 ### Patch Changes
