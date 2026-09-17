@@ -1,5 +1,11 @@
 # grants-config-example-grants
 
+## 3.20.0
+
+### Minor Changes
+
+- 8cb2636: testing variant
+
 ## 3.19.0
 
 ### Minor Changes
