@@ -1,5 +1,11 @@
 # grants-config-example-grants
 
+## 3.25.0
+
+### Minor Changes
+
+- 1dafd66: v4
+
 ## 3.24.0
 
 ### Minor Changes
