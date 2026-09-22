@@ -1,5 +1,11 @@
 # grants-config-example-grants
 
+## 3.26.0
+
+### Minor Changes
+
+- 1dafd66: sdfsf
+
 ## 3.25.0
 
 ### Minor Changes
