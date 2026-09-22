@@ -1,5 +1,11 @@
 # grants-config-example-grants
 
+## 3.23.0
+
+### Minor Changes
+
+- 1dafd66: varinat
+
 ## 3.22.0
 
 ### Minor Changes
