@@ -112,7 +112,7 @@ metadata:
         pageTitle: You cannot submit this claim
         content: |
           <p class="govuk-body">You do not have permission to submit the claim.</p>
-          <p class="govuk-body">Contact an authorised person from your business to review and submit the claim.</p>
+          <p class="govuk-body">Contact a person in your business to review and submit the claim.</p>
   detailsPage:
     toleratedFailurePaths:
       - countyParishHoldings
@@ -993,7 +993,6 @@ pages:
           <p class="govuk-body">Your application <strong>{{ context.referenceNumber }}</strong> has been reopened. Click continue to check your submitted answers and change them.</p>
     next:
       - path: /summary
-
 
   # ==========================================
   # Claims journey
