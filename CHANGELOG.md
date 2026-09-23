@@ -1,5 +1,11 @@
 # grants-config-example-grants
 
+## 3.26.1
+
+### Patch Changes
+
+- 0c36ab6: Update claim permission page copy
+
 ## 3.26.0
 
 ### Minor Changes
