@@ -5,9 +5,10 @@ metadata:
   surveyLabel: Example grant with map
   enabledInProd: false
   enabledLandActions:
+    - 'CSAM3'
     - 'CLIG3'
     - 'SCR2'
-    - 'CSAM3'
+    - 'WBD1'
   grantRedirectRules:
     preSubmission:
       - toPath: /summary
