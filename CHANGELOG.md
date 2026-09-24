@@ -1,5 +1,11 @@
 # grants-config-example-grants
 
+## 3.27.0
+
+### Minor Changes
+
+- 23ec5bd: Enable WBD1 for example-grant-with-map
+
 ## 3.26.1
 
 ### Patch Changes
