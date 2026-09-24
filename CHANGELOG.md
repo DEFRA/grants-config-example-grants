@@ -1,5 +1,11 @@
 # grants-config-example-grants
 
+## 3.27.1
+
+### Patch Changes
+
+- 0c36ab6: Permissions pages - copy change
+
 ## 3.27.0
 
 ### Minor Changes
