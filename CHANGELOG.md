@@ -1,5 +1,11 @@
 # grants-config-example-grants
 
+## 3.28.0
+
+### Minor Changes
+
+- 9526fde: Enable HEF1 on example-grant-with-map
+
 ## 3.27.1
 
 ### Patch Changes
