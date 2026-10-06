@@ -5,6 +5,12 @@ releases:
     environments:
       - name: local
         status: active
+  - name: example-grant-with-closed-window
+    version: 0.0.0
+    notes: For acceptance tests
+    environments:
+      - name: local
+        status: active
   - name: example-grant-with-map
     version: 0.0.0
     notes: For acceptance tests
