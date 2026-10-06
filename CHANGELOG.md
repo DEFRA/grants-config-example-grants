@@ -1,5 +1,11 @@
 # grants-config-example-grants
 
+## 3.29.0
+
+### Minor Changes
+
+- 5a80bcf: Add example-grant-with-closed-window to exercise the application window closed flow
+
 ## 3.28.0
 
 ### Minor Changes
