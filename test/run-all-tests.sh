@@ -23,6 +23,7 @@ fi
 # Grants set up for acceptance tests (keep in sync with release.yml).
 GRANTS=(
   example-grant-with-auth
+  example-grant-with-closed-window
   example-grant-with-map
   example-grant-with-task-list
   example-grant-with-task-list-hide-questions
