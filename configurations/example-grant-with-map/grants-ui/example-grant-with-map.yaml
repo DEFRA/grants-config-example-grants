@@ -10,6 +10,12 @@ metadata:
     - 'HEF1'
     - 'SCR2'
     - 'WBD1'
+    - 'CLIG3_26'
+    - 'CNUM2_26'
+    - 'CSAM3_26'
+    - 'HEF1_26'
+    - 'SCR2_26'
+    - 'WBD1_26'
   grantRedirectRules:
     preSubmission:
       - toPath: /summary
