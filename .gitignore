@@ -9,5 +9,4 @@ coverage
 .cache
 .eslintcache
 .env
-test/testconfig
 AGENTS.local.md

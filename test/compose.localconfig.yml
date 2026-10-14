@@ -1,4 +1,0 @@
-services:
-  grants-config-broker:
-    volumes:
-      - ${PWD}/test/testconfig:/home/node/config
