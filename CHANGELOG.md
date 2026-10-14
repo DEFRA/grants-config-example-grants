@@ -1,5 +1,11 @@
 # grants-config-example-grants
 
+## 3.29.1
+
+### Patch Changes
+
+- 21a8694: Remove CRNs from existing allowlist
+
 ## 3.29.0
 
 ### Minor Changes
