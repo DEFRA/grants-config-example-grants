@@ -312,10 +312,9 @@
               "validFrom": [
                 {
                   "code": "IN_REVIEW",
-                  "processes": []
+                  "processes": ["GENERATE_OFFER"]
                 }
-              ],
-              "processes": ["GENERATE_OFFER"]
+              ]
             },
             {
               "code": "APPLICATION_WITHDRAWN",
@@ -338,24 +337,7 @@
               "validFrom": [
                 {
                   "code": "PRE_AWARD:REVIEW_APPLICATION:AGREEMENT_GENERATING",
-                  "processes": []
-                }
-              ],
-              "processes": ["STORE_AGREEMENT_CASE"]
-            }
-          ]
-        },
-        {
-          "code": "CUSTOMER_AGREEMENT_REVIEW",
-          "name": "Customer Agreement Review",
-          "description": "Customer reviews the agreement offer",
-          "statuses": [
-            {
-              "code": "OFFER_SENT",
-              "validFrom": [
-                {
-                  "code": "PRE_AWARD:REVIEW_OFFER:OFFER_SENT",
-                  "processes": []
+                  "processes": ["STORE_AGREEMENT_CASE"]
                 }
               ]
             }
@@ -375,11 +357,10 @@
               "code": "OFFER_ACCEPTED",
               "validFrom": [
                 {
-                  "code": "PRE_AWARD:CUSTOMER_AGREEMENT_REVIEW:OFFER_SENT",
-                  "processes": []
+                  "code": "PRE_AWARD:REVIEW_OFFER:OFFER_SENT",
+                  "processes": ["ACCEPT_AGREEMENT"]
                 }
-              ],
-              "processes": ["UPDATE_AGREEMENT_CASE"]
+              ]
             },
             {
               "code": "COMPLETE_AGREEMENT",
@@ -421,7 +402,7 @@
             ]
           },
           {
-            "code": "CUSTOMER_AGREEMENT_REVIEW",
+            "code": "REVIEW_OFFER",
             "statuses": [
               {
                 "code": "accepted",
