@@ -1,5 +1,12 @@
 # grants-config-example-grants
 
+## 3.29.1
+
+### Patch Changes
+
+- 16b7da7: Remove the pigs-might-fly amendable position for a status that does not exist
+- 21a8694: Remove CRNs from existing allowlist
+
 ## 3.29.0
 
 ### Minor Changes
