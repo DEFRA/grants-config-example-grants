@@ -1,5 +1,11 @@
 # grants-config-example-grants
 
+## 3.30.0
+
+### Minor Changes
+
+- fbc2149: update example-whitelist config, move allowlist data to app-config
+
 ## 3.29.1
 
 ### Patch Changes
