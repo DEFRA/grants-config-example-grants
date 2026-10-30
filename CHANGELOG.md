@@ -1,5 +1,11 @@
 # grants-config-example-grants
 
+## 3.30.1
+
+### Patch Changes
+
+- 225af8e: Trigger a version to check realignment
+
 ## 3.30.0
 
 ### Minor Changes
