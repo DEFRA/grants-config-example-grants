@@ -1,5 +1,11 @@
 # grants-config-example-grants
 
+## 3.30.2
+
+### Patch Changes
+
+- bba8779: Trigger version
+
 ## 3.30.1
 
 ### Patch Changes
