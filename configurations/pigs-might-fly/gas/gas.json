@@ -1,5 +1,8 @@
 {
   "code": "pigs-might-fly",
+  "admin": {
+    "role": "ROLE_PMF_ADMIN"
+  },
   "metadata": {
     "description": "Pigs Might Fly",
     "startDate": {
