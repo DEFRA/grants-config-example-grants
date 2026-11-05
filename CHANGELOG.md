@@ -1,5 +1,11 @@
 # grants-config-example-grants
 
+## 3.31.0
+
+### Minor Changes
+
+- 8f66f4f: Configure ROLE_PMF_ADMIN as the Caseworking role required to administer Pigs Might Fly in Grants Platform Administration.
+
 ## 3.30.1
 
 ### Patch Changes
