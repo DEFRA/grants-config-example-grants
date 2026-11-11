@@ -321,6 +321,25 @@
       ]
     }
   ],
+  "search": {
+    "fields": [
+      {
+        "key": "businessName",
+        "label": "Business name",
+        "path": "$.answers.applicant.business.name",
+        "match": "prefix"
+      },
+      {
+        "key": "applicantName",
+        "label": "Applicant name",
+        "path": [
+          "$.answers.applicant.customer.name.first",
+          "$.answers.applicant.customer.name.last"
+        ],
+        "match": "prefix"
+      }
+    ]
+  },
   "externalStatusMap": {
     "phases": [
       {
