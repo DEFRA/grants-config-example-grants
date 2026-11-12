@@ -1392,6 +1392,30 @@
       ]
     }
   ],
+  "search": {
+    "fields": [
+      {
+        "key": "businessName",
+        "label": "Business name",
+        "path": "$.payload.answers.applicant.business.name",
+        "match": "prefix"
+      },
+      {
+        "key": "applicantName",
+        "label": "Applicant name",
+        "path": [
+          "$.payload.answers.applicant.customer.name.first",
+          "$.payload.answers.applicant.customer.name.last"
+        ],
+        "match": "prefix"
+      },
+      {
+        "key": "agreementReference",
+        "label": "Agreement reference",
+        "path": "$.supplementaryData.agreements[*].agreementRef"
+      }
+    ]
+  },
   "requiredRoles": {
     "allOf": ["ROLE_PMF"],
     "anyOf": ["ROLE_PMF2"]
