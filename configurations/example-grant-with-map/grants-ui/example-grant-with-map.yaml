@@ -18,7 +18,7 @@ metadata:
           key: actionsObj
         incompleteToPath: /select-land-parcel
   referenceNumberPrefix: EGWM
-  supportEmail: support@defra.gov.uk
+  supportEmail: ruralpayments@defra.gov.uk
   cookieConsent:
     enabled: true
     serviceName: Farm and land service
