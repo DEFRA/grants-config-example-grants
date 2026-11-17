@@ -1,5 +1,11 @@
 # grants-config-example-grants
 
+## 3.31.1
+
+### Patch Changes
+
+- 7a10a0c: TGC-1873 - Fix support email in example grants
+
 ## 3.31.0
 
 ### Minor Changes
