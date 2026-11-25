@@ -1,5 +1,11 @@
 # grants-config-example-grants
 
+## 3.31.2
+
+### Patch Changes
+
+- 4d5291a: Delete dummy file
+
 ## 3.31.1
 
 ### Patch Changes
